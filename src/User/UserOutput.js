@@ -9,6 +9,8 @@ const UserOutput = (props) => {
   let username = null;
   if (props.username) {
     username = <span style={props.userStyle}>{props.username}</span>;
+  } else {
+    username = 'whoever you are.';
   }
 
   return (

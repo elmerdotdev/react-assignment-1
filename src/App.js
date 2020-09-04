@@ -4,6 +4,8 @@ import './App.css';
 import UserInput from './User/UserInput';
 import UserOutput from './User/UserOutput';
 import './User/UserInput.css';
+import Assignment from './Assignment/Assignment';
+import './Assignment/Assignment.css';
 
 class App extends Component {
   state = {
@@ -15,7 +17,6 @@ class App extends Component {
   };
 
   changeUserName = (event) => {
-    console.log('change');
     this.setState({
       users: [
         {
@@ -52,10 +53,10 @@ class App extends Component {
               userStyle={userStyle}
             >
               Nothing fancy. This just outputs whatever you enter inside the
-              input box. This app uses props, states, and CSS styling (both
-              inline and stylesheet).
+              input box.
             </UserOutput>
           </div>
+          <Assignment />
         </header>
       </div>
     );
